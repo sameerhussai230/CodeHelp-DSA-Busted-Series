@@ -20,9 +20,9 @@ bool isPossible(vector<int> &stalls, int k, int mid, int n) {
 int aggressiveCows(vector<int> &stalls, int k)
 {
     sort(stalls.begin(), stalls.end());
-   	int s = 0;
+       int s = 0;
     int n = stalls.size();
-    int e=stalls[n-1];
+    int e=stalls[n-1]- stalls[0];
     int ans = -1;
     int mid = s + (e-s)/2;
     
